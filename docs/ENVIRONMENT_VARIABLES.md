@@ -55,7 +55,7 @@ Interactive OpenAPI / Swagger documentation page settings.
 
 | Variable | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| `NEXT_PUBLIC_SWAGGER_ENABLED` | boolean | `true` | Toggle public access to the interactive API documentation at `/docs`. |
+| `SWAGGER_ENABLED` | boolean | `false` | Serves `/swagger` and `/api/docs` only when `true`. Read by the server at runtime. Replaces `NEXT_PUBLIC_SWAGGER_ENABLED`, which the app never read. |
 | `NEXT_PUBLIC_SWAGGER_USERNAME` | string | `admin` | Basic auth username required to view the `/docs` page. |
 | `NEXT_PUBLIC_SWAGGER_PASSWORD` | string | `admin123` | Basic auth password. **Wajib diubah di server production!** |
 
